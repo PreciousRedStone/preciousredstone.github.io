@@ -1,0 +1,33 @@
+title: Ruby Idrees
+email: msrubidrees@icloud.com
+description: >
+  Ruby Idrees is an artist based in England, UK with an experience in mix art.
+baseurl: ""
+url: "https://preciousredstone.com"
+# paginate_path: /page/:num/
+# paginate: 10
+
+
+twitter_username: rubyidrees
+github_username:  preciousredstone
+facebook_username: prsartgallery
+instagram_username: prsartgallery
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  # - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .bowerrc
+  - node_modules
+  - bower_components
+compress_html:
+  ignore:
+    envs: development
+sass:
+  sass_dir: _scss
+  style: compressed
