@@ -4,7 +4,7 @@ a {
 
   &:hover,
   &:active {
-    color: #c30;
+    color: darken($brand-orange, 20%);
   }
 }
 
@@ -16,17 +16,17 @@ strong,
 }
 
 blockquote {
-  color: $brand-golden;
+  color: $brand-orange;
   background-color: $brand-pink;
   margin-top: 10px;
 }
 
 pre {
-  background-color: $brand-code;
+  background-color: $brand-pink;
   border: none;
 }
 
 .invert {
-  background-color: $text-color;
-  color: #ccc;
+  background-color: $brand-pink;
+  color: #333;
 }

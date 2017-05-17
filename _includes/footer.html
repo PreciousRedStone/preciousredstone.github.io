@@ -2,10 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4">
-
         <div class="site__footer-content text-centeer">
-          <p>&copy; {{ site.time | date: '%Y'}} &ndash; Copyrights {{ site.title }}</p>
-          <p>All rights reserved.</p>
+          <p>&copy; {{ site.time | date: '%Y'}} &ndash; {{ site.title }}. All rights reserved.</p>
 
           <ul class="list-inline site__footer-social">
             <li><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">Facebook</a></li>
@@ -14,18 +12,13 @@
           </ul>
 
           <ul class="list-inline site__footer-showcase">
-
-            {% comment %}
-            <li class="hide"><a href="{{ '/about/' | prepend: site.baseurl }}">About</a></li>
-            <li class="hide"><a href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a></li>
-            <li class="hide"><a href="{{ '/speaking/' | prepend: site.baseurl }}">Speaking</a></li>
-            {% endcomment %}
-
-            <li><a href="{{ '/services/' | prepend: site.baseurl }}">Services</a></li>
-            <li><a href="{{ '/portfolio/' | prepend: site.baseurl }}">Portfolio</a></li>
-            <li><a href="{{ '/about/' | prepend: site.baseurl }}">About</a></li>
-            <li><a href="{{ '/contact/' | prepend: site.baseurl }}">Contact</a></li>
+            <li><a href="mailto:ruby@preciousredstone.com">ruby@preciousredstone.com</a></li>
+          {% comment %}
+            <li><a href="{{ '/gallery' | prepend: site.baseurl }}">Gallery</a></li>
+            <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+            <li><a href="{{ '/contact' | prepend: site.baseurl }}">Contact</a></li>
             <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS feed</a></li>
+          {% endcomment %}
           </ul>
         </div>
 
