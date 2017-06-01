@@ -1,18 +1,18 @@
 title: Ruby Idrees
-email: msrubidrees@icloud.com
-profession: Freelance artist
+email: ruby@preciousredstone.com
+profession: Henna & face paint artist &ndash; Hounslow London
 description: >
-  Ruby Idrees is an artist based in England, UK with an experience in mix art.
+  Ruby is an artist based in London Borough of Hounslow with years of experience
+  of Henna & face paint art and painting in variety of mediums i.e. water, oil & acrylic
 baseurl: ""
 url: "https://preciousredstone.com"
 # paginate_path: /page/:num/
 # paginate: 10
 
-
 twitter_username: rubyidrees
 github_username:  preciousredstone
-facebook_username: prsartgallery
-instagram_username: prsartgallery
+facebook_username: hennabyruby
+instagram_username: hennabyrubylondon
 
 # Build settings
 markdown: kramdown

@@ -1,17 +1,18 @@
 <head>
-  <!-- Default metadata -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% comment %} Default metadata {% endcomment %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} &ndash; {{ site.profession }}{% endif %}</title>
-  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join:',' }}">{% endif %}
+  {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join:',' }}">
+  {% else %}
+    <meta name="keywords" content="henna,mendhi,art,tattoo,henna artist in Hounslow,henna artist in London">
+  {% endif %}
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <!-- SEO -->
-  <!--{ include seo.html }-->
-
-  <!-- Favicons etc. -->
+  {% comment %} Favicons etc. {% endcomment %}
   <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | prepend: site.baseurl }}">
   <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon-60x60.png' | prepend: site.baseurl }}">
   <link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/images/apple-touch-icon-76x76.png' | prepend: site.baseurl }}">
@@ -24,14 +25,15 @@
   <meta name="msapplication-wide310x150logo" content="{{ '/assets/images/mstile-310x150.png' | preprend: site.baseurl }}">
   <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
   <meta name="application-name" content="{{ site.title }}">
-  <meta name="msapplication-TileColor" content="#9dbf8e">
+  <meta name="msapplication-TileColor" content="#9a679a">
   <meta name="cleartype" content="on">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#9dbf8e">
+  <meta name="theme-color" content="#9a679a">
 
-  <!-- Styling -->
+  {% comment %} Styling {% endcomment %}
   <link href="//fonts.googleapis.com/css?family=Montserrat:600|Roboto+Condensed|Roboto+Mono:400,500" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
 
   <!--[if lt IE 9]>
