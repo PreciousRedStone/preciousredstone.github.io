@@ -1,10 +1,10 @@
 // Custom styling and overrides
 a {
-  color: darken($brand-orange, 10%);
+  color: darken($brand-pink, 10%);
 
   &:hover,
   &:active {
-    color: darken($brand-orange, 20%);
+    color: darken($brand-pink, 20%);
   }
 }
 
@@ -16,17 +16,17 @@ strong,
 }
 
 blockquote {
-  color: $brand-orange;
-  background-color: $brand-pink;
+  color: $brand-pink;
+  background-color: $brand-pink-light;
   margin-top: 10px;
 }
 
 pre {
-  background-color: $brand-pink;
+  background-color: $brand-pink-light;
   border: none;
 }
 
 .invert {
-  background-color: $brand-pink;
+  background-color: $brand-pink-light;
   color: #333;
 }

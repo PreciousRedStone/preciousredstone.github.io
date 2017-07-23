@@ -10,21 +10,22 @@
           </a>
         {% endif %}
 
-          {% comment %}
           <ul class="site_nav">
             <li class="site_nav-item">
-              <a href="{{ '/gallery' | prepend: site.baseurl }}">Gallery</a>
+              <a href="#gallery">Gallery</a>
             </li>
             <li class="site_nav-item">
-              <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
+              <a href="#hire">Contact</a>
             </li>
-            <li class="site_nav-item">
-              <a href="{{ '/contact' | prepend: site.baseurl }}">Contact</a>
+            {% comment %}
+            <li class="site_nav-item site_nav-item--social">
+              <a class="icon icon--instagram" target="_blank" href="https://instagram.com/@{{ site.instagram.username }}">{% include icon-instagram.svg %}</a>
             </li>
-            <!--<li class="site_nav-item site_nav-item--social"><a class="icon icon--twitter" target="_blank" href="https://twitter.com/@{{ site.twitter.username }}">{% include icon-twitter.svg %}</a></li>-->
-            <!--<li class="site_nav-item site_nav-item--social"><a class="icon icon--github" target="_blank" href="https://github.com/{{ site.github.username }}">{% include icon-github.svg %}</a></li>-->
+            <li class="site_nav-item site_nav-item--social">
+              <a class="icon facebook" target="_blank" href="https://facebook.com/{{ site.facebook.username }}">{% include icon-facebook.svg %}</a>
+            </li>
+            {% endcomment %}
           </ul>
-          {% endcomment %}
       </div>
     </div>
   </div>

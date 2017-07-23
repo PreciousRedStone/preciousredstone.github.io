@@ -44,3 +44,28 @@
     color: inherit;
   }
 }
+
+.hire,
+.gallery,
+.masthead {
+  &_heading {
+    //color: #333;
+  }
+
+  &_subheading {
+    @extend h4;
+    color: $brand-pink;
+  }
+}
+
+.gallery_image {
+  @media (min-width: $screen-xs-min) {
+    max-width: 230px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $screen-md) {
+    max-width: 275px;
+  }
+}

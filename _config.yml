@@ -32,3 +32,9 @@ compress_html:
 sass:
   sass_dir: _scss
   style: compressed
+defaults:
+  - scope:
+      path: "assets/images/gallery"
+    values:
+      image: true
+      gallery: true

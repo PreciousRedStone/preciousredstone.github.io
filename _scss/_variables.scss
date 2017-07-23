@@ -3,10 +3,10 @@ $font-family-sans-serif:'Roboto Condensed', sans-serif;
 // $font-family-base: $font-family-monospace;
 
 // Colors
-$brand-primary: #329a9a;
+$brand-primary: #669A66;
 $brand-secondary: #9dbf8e;
-$brand-orange: #9a679a;
-$brand-pink: #cc9ac6;
+$brand-pink: #9a679a;
+$brand-pink-light: #cc9ac6;
 // $brand-code: #e3e9e9;
 // $brand-gold: #ffd700;
 // $brand-golden: #c88f15;
@@ -17,10 +17,10 @@ $brand-google-plus: #d73d32 !default;
 $brand-github: #828282 !default;
 
 // Overrides
-$font-size-base: 16px;
+$font-size-base: 18px;
 $line-height-base: 1.5;
 $headings-color: $brand-primary;
 $headings-font-family: 'Montserrat', sans-serif;
 $headings-font-weight: 600;
 // $blockquote-border-color: $brand-golden;
-$code-bg: $brand-pink;
+$code-bg: $brand-pink-light;
