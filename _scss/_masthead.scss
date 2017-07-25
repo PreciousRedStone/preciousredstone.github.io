@@ -59,6 +59,9 @@
 }
 
 .gallery_image {
+  margin-bottom: 10px;
+  cursor: pointer;
+
   @media (min-width: $screen-xs-min) {
     max-width: 230px;
     display: inline-block;
@@ -67,5 +70,80 @@
 
   @media (min-width: $screen-md) {
     max-width: 275px;
+  }
+
+  &--interactive {
+    background-color: black;
+    transition: opacity 200ms linear;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: .65;
+    }
+  }
+}
+
+.gallery_lightbox {
+  position: fixed;
+  display: block;
+  background-color: rgba(black, .8);
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &--hidden {
+    display: none;
+  }
+
+  &_image {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    padding: 0 20px;
+    z-index: 4;
+
+    .gallery_image {
+      position: relative;
+      margin: 10px auto;
+      max-width: 100%;
+      margin-bottom: inherit;
+      display: block;
+      border: 5px solid rgba(white, .9);
+      border-radius: 5px;
+      cursor: default;
+    }
+  }
+
+  &_close {
+    border-radius: 100%;
+    position: absolute;
+    background-color: #333;
+    border: 1px solid;
+    color: #fff;
+    line-height: 1.1;
+    font-size: 28px;
+    margin: auto;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    z-index: 6;
+    box-shadow: #333 1px 1px 5px;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #fff;
+      color: #333;
+      border-color: #333;
+    }
   }
 }

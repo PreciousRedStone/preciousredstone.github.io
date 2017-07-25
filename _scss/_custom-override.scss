@@ -1,4 +1,11 @@
 // Custom styling and overrides
+
+body {
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
 a {
   color: darken($brand-pink, 10%);
 

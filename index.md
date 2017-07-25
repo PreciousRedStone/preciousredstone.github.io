@@ -25,12 +25,15 @@ div.contact
   </ul>
 </div>
 
-
 <div id="gallery" class="gallery">
   <h2 class="gallery_heading">Gallery</h2>
   <p class="gallery_description">Here is some of my work</p>
   {% assign artWork = site.static_files | where: "gallery", true %}
   {% for art in artWork %}
-    <img src="{{ art.path | prepend: site.url }}" alt="{{ art.basename }}" class="gallery_image img-responsive">
+    <img src="{{ art.path | prepend: site.url }}" alt="{{ art.basename }}" class="gallery_image gallery_image--interactive img-responsive">
   {% endfor %}
+  <div class="gallery_lightbox gallery_lightbox--hidden">
+    <button class="gallery_lightbox_close" type="button">&times;</button>
+    <div class="gallery_lightbox_image"></div>
+  </div>
 </div>
