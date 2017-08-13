@@ -12,18 +12,30 @@ class: home
   <p class="masthead_description">You can enquire about anything related to my work by writing at <a href="mailto:ruby@preciousredstone.com">ruby@preciousredstone.com</a> and view my work by visiting Facebook pages for <a href="https://facebook.com/PRSArtGallery/photos">PRS Art Gallery</a> and <a href="https://facebook.com/HennaByRuby/photos">Henna &amp; Face paint by Ruby</a>.</p>
 </div>
 
-div.contact
+<div class="row">
+  <div id="hire" class="col-sm-4 col-sm-offset-1 hire">
+    <h2 class="hire_heading">What I offer</h2>
+    <ul class="list-unstyled hire_services">
+      <li>Seasonal/Occasional/Bridal Henna art, tattoos</li>
+      <li>Face painting at Birthday parties or social events</li>
+      <li>Handmade paintings</li>
+      <li>Glitter tattoos</li>
+      <li>Bespoke artwork for home or workplace</li>
+    </ul>
+  </div>
 
-<div id="hire" class="hire">
-  <h2 class="hire_heading">Hire me for:</h2>
-  <ul class="hire_services">
-    <li>Seasonal/Occasional/Bridal Henna art, tattoos</li>
-    <li>Face painting at Birthday parties or social events</li>
-    <li>Handmade paintings</li>
-    <li>Glitter tattoos</li>
-    <li>Bespoke artwork for home or workplace</li>
-  </ul>
+  <div id="contact" class="col-sm-4 col-sm-offset-2 contact">
+    <h2 class="contact_heading">Get in touch</h2>
+    <ul class="list-unstyled contact_details">
+      <li><a href="mailto:ruby@preciousredstone.com">ruby@preciousredstone.com</a></li>
+      <li><a href="tel:07983580025">07597 081 126</a></li>
+      <li><a href="https://www.instagram.com/hennabyrubylondon">Visit my page on Instagram</a></li>
+      <li><a href="https://www.facebook.com/hennabyruby">Visit my page on Facebook</a></li>
+    </ul>
+  </div>
 </div>
+
+<hr>
 
 <div id="gallery" class="gallery">
   <h2 class="gallery_heading">Gallery</h2>

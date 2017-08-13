@@ -1,5 +1,23 @@
+
+.site_masthead {
+  background-image: url(../images/henna-face-paint-by-ruby.jpg);
+  background-repeat: no-repeat;
+  background-position: top 65% center;
+  background-size: cover;
+  min-height: 250px;
+
+  @media (min-width: $screen-xs) {
+    min-height: 350px;
+  }
+
+  @media (min-width: $screen-md) {
+    min-height: 450px;
+    background-image: url(../images/henna-face-paint-by-ruby-large.jpg);
+  }
+}
+
 .site_masthead-title {
-  width: 100%;
+  width: 50%;
   height: 50px;
   color: inherit;
   font-size: 0px;
@@ -8,7 +26,7 @@
   padding-top: 0;
   background: {
     image: url(../images/prs-art-gallery-logo.png);
-    size: 40%;
+    size: 100%;
     repeat: no-repeat;
     position: left 0 top 50%;
   }
@@ -16,7 +34,6 @@
   @media (min-width: $screen-xs) {
     width: 256px;
     height: 80px;
-    background-size: 100%;
     padding-top: 5px;
   }
 }
@@ -42,6 +59,16 @@
   &:active {
     text-decoration: none;
     color: inherit;
+  }
+}
+
+.masthead {
+  @media (min-width: $screen-xs) {
+    margin-top: -75px;
+    background: #fff;
+    padding: 5px 25px;
+    min-height: 350px;
+    box-shadow: 0 -7px 8px rgba(0, 0, 0, .2);
   }
 }
 
