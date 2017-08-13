@@ -28,7 +28,7 @@ class: home
     <h2 class="contact_heading">Get in touch</h2>
     <ul class="list-unstyled contact_details">
       <li><a href="mailto:ruby@preciousredstone.com">ruby@preciousredstone.com</a></li>
-      <li><a href="tel:07983580025">07597 081 126</a></li>
+      <li><a href="tel:07597081126">07597 081 126</a></li>
       <li><a href="https://www.instagram.com/hennabyrubylondon">Visit my page on Instagram</a></li>
       <li><a href="https://www.facebook.com/hennabyruby">Visit my page on Facebook</a></li>
     </ul>
