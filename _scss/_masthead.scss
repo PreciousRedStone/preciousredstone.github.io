@@ -85,6 +85,23 @@
   }
 }
 
+.gallery_image_holder {
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 230px;
+  min-height: 230px;
+  width: 100%;
+  height: auto;
+  margin-right: 3px;
+  cursor: pointer;
+
+  @media (min-width: $screen-sm) {
+    max-width: 230px;
+  }
+}
+
 .gallery_image {
   margin-bottom: 10px;
   cursor: pointer;

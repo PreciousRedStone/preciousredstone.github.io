@@ -42,7 +42,8 @@ class: home
   <p class="gallery_description">Here is some of my work</p>
   {% assign artWork = site.static_files | where: "gallery", true %}
   {% for art in artWork %}
-    <img src="{{ art.path | prepend: site.url }}" alt="{{ art.basename }}" class="gallery_image gallery_image--interactive img-responsive">
+    <div class="gallery_image_holder" title="{{ art.basename }}" data-image="{{ art.path | prepend: site.url }}" style="background-image: url({{ art.path | prepend: site.url }})">
+    </div>
   {% endfor %}
   <div class="gallery_lightbox gallery_lightbox--hidden">
     <button class="gallery_lightbox_close" type="button">&times;</button>
