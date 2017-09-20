@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html xmlns:fb="http://ogp.me/ns/fb#" class="ie-legacy"><![endif]-->
+<!--[if IE 8]><html xmlns:fb="http://ogp.me/ns/fb#" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns:fb="http://ogp.me/ns/fb#" class="ie9"><![endif]-->
+<!--[if gt IE 9]><html xmlns:fb="http://ogp.me/ns/fb#" class="ie10"><![endif]-->
+<!--[if !IE]><!--><html xmlns:fb="http://ogp.me/ns/fb#"><!-- <![endif]-->
+{% include head.html %}
+
+  <body class="{% if page.class %}{{ page.class }}{% endif %}">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKXW74L"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,31 @@
+---
+# Keep this!
+---
+
+@charset "utf-8";
+
+@import "variables";
+@import "mixins";
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: normal;
+  font-style: normal;
+  line-height: $font-line-height;
+  color: #111;
+  background-color: $secondary-color;
+  //@include gradient($primary-color, $secondary-color, 45deg);
+}
+
+%headings {
+  font-family: $heading-font-family-base;
+  font-weight: 600;
+  line-height: 1.16;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    @extend %headings;
+  }
+}

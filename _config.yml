@@ -1,0 +1,27 @@
+title: Henna & Face Painting by Ruby
+email: ruby@preciousredstone.com
+description: > # this means to ignore newlines until "baseurl:"
+  Ruby is an artist based in London Borough of Hounslow with years
+  of experience of Henna & face painting and canvas painting in variety
+  of mediums i.e. water, oil & acrylic.
+baseurl: ""
+url: "http://preciousredstone.com"
+twitter_username: rubyidrees
+github_username:  preciousredstone
+facebook_username:  HennaByRuby
+instagram_username:  HennaByRubyLondon
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+compress_html:
+  ignore:
+    envs: development
+sass:
+  sass_dir: assets/_scss
+  style: compressed
