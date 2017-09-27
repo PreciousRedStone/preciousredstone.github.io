@@ -42,7 +42,7 @@ class: home
   <p class="gallery_description">Here is some of my work</p>
   {% assign artWork = site.static_files | where: "gallery", true %}
   {% for art in artWork %}
-    <div class="gallery_image_holder" title="{{ art.basename }}" data-src="{{ art.path | prepend: site.url }}"></div>
+    <div class="gallery_image_holder js-lazy-load" title="{{ art.basename }}" data-src="{{ art.path | prepend: site.url }}"></div>
   {% endfor %}
   <div class="gallery_lightbox gallery_lightbox--hidden">
     <button class="gallery_lightbox_close" type="button">&times;</button>
