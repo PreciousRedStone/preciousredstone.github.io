@@ -5,7 +5,7 @@
     document.body.classList.add('no-scroll');
 
     var img = new Image();
-    img.src = this.getAttribute('data-image');
+    img.src = this.getAttribute('data-src');
 
     var lightbox = document.querySelector('.gallery_lightbox');
     var lbImage = document.querySelector('.gallery_lightbox_image');
